@@ -16,19 +16,22 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
 
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 90%;
-            height: 90%;
+            width: 100%;
+            max-width: 500px; /* Mock mobile screen width */
+            height: 100%;
             padding: 20px;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             position: relative;
+            overflow: hidden;
         }
 
         .responsive-iframe {
@@ -98,7 +101,7 @@
     </div>
     <div class="container hidden" id="content">
         <div class="responsive-iframe">
-            <iframe title="PI2" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c6a9f94f-de6a-4ba1-bd9a-68c11c92a267&autoAuth=true&ctid=604f1a96-cbe8-43f8-abbf-f8eaf5d85730" allowFullScreen="true" onload="hideLoader()" scrolling="no"></iframe>
+            <iframe title="Power BI Report" src="https://app.powerbi.com/reportEmbed?reportId=c6a9f94f-de6a-4ba1-bd9a-68c11c92a267&autoAuth=true&ctid=604f1a96-cbe8-43f8-abbf-f8eaf5d85730" allowFullScreen="true" onload="hideLoader()" scrolling="no"></iframe>
         </div>
     </div>
 
